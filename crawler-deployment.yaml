@@ -17,8 +17,6 @@ spec:
       containers:
       - name: synergychat-crawler
         image: bootdotdev/synergychat-crawler:latest
-        ports:
-        - containerPort: 8080
         envFrom:
           - configMapRef:
               name: synergychat-crawler-configmap
